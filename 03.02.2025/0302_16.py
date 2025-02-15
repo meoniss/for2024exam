@@ -6,5 +6,9 @@ def f(n):
         return n
     else:
         return f(n % 9) + f(n // 9)
+countt = 0
 
-print(f(5*6**20, 9) - f(4*6**20-1, 9))
+for n in range(4*6**20, 5*6**20+1):
+    if f(n) == 121:
+        countt += 1
+print(countt)

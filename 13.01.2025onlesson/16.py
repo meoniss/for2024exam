@@ -1,3 +1,5 @@
+import sys
+sys.setrecursionlimit(300000)
 countn = 0
 def f(n):
     if n < 10:

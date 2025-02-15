@@ -1,4 +1,4 @@
-f = open('for9.txt')
+f = open('13.01.2025onlesson\9.csv')
 
 countt = 0
 for s in f:
@@ -6,5 +6,3 @@ for s in f:
     if not(a[0] + a[1] >= a[2] and a[0] + a[1] >= a[3] and a[0] + a[2] >= a[3] and a[1] + a[2] >= a[3]):
         countt += 1
 print(countt)
-
-#почему-то пишет, что не может найти файл txt, хотя он в той же папке

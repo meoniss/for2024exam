@@ -2,10 +2,12 @@ from sys import *
 setrecursionlimit(30000000)
 def f(n):
     deli = set()
-    for i in range(2, n):
-        if n % i == 0:
+    for i in range(1, n+1):
+        k = n
+        if k % i == 0:
             deli.add(i)
-            deli.add(n // i)
+            deli.add(k // i)
+            k = k // i
     return deli
 maxdeli = 0
 maxn = 0
